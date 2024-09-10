@@ -3,40 +3,22 @@ import tkinter as tk
 root = tk.Tk()
 root.title("BRAWLTRACKER")
 
-def add_to_list():
-    text=entry.get()
-    if text:
-        text_list.insert(tk.END,text)
-        entry.delete(0,tk.END)
-"""""
-def on_click():
-    lbl.config(text="Button clicked")
+root.minsize(width=400, height=400)
+root.maxsize(width=800, height=800)
 
-lbl = tk.Label(root, text="label 1")
-lbl.grid(row=1, column=0)
+# Configure the grid to have at least 3 columns
+root.grid_columnconfigure(0, weight=1)  # Empty space on the left
+root.grid_columnconfigure(1, weight=1)  # Buttons
+root.grid_columnconfigure(2, weight=1)  # Empty space on the right
 
-print(lbl.config().keys())
+# Center the Matches button and make it larger
+btn_matches = tk.Button(root, text="Matches", width=15, height=3)  # Increase width and height
+btn_matches.grid(row=0, column=1, sticky="wn")
 
-btn=tk.Button (root, text="Matches", command=on_click)
-btn.grid(row=0, column=2) 
+# Center the Stats button below the Matches button and make it larger
+btn_stats = tk.Button(root, text="Stats", width=15, height=3)  # Increase width and height
+btn_stats.grid(row=0, column=2, sticky="ne")
 
-btn=tk.Button (root, text="Stats")
-btn.grid(row=0, column=1) 
-"""
+root.mainloop()
 
-frame=tk.Frame(root)
-frame.grid(row=0, column=0) 
-
-entry =tk.Entry(frame)
-entry.grid(row=0,column=0)
-
-entry.bind()
-
-entry_btn = tk.Button(frame, text="enter text here",  command=add_to_list)
-entry_btn.grid(row=0,column=1)
-
-text_list=tk.Listbox(frame)
-text_list.grid(row=1, column=0)
-
-root. mainloop()
 
