@@ -1,2 +1,69 @@
+{
+  "name": "bmg | dan",
+  "brawlhalla_id": 2,
+  "rating": 1745,
+  "peak_rating": 1792,
+  "tier": "Platinum 2",
+  "wins": 207,
+  "games": 391,
+  "region": "US-E",
+  "global_rank": 5698,
+  "region_rank": 1644,
+  "legends": [
+      {
+          "legend_id": 4,
+          "legend_name_key": "cassidy",
+          "rating": 1736,
+          "peak_rating": 1792,
+          "tier": "Platinum 1",
+          "wins": 161,
+          "games": 300
+      },
+      {
+          "legend_id": 21,
+          "legend_name_key": "barraza",
+          "rating": 1640,
+          "peak_rating": 1640,
+          "tier": "Gold 5",
+          "wins": 41,
+          "games": 77
+      }
+  ],
+  "2v2": [
+      {
+          "brawlhalla_id_one": 2,
+          "brawlhalla_id_two": 9,
+          "rating": 793,
+          "peak_rating": 793,
+          "tier": "Tin 2",
+          "wins": 1,
+          "games": 1,
+          "teamname": "[BMG] Dan+[BMG] Dolchay",
+          "region": 2,
+          "global_rank": 423974
+      },
+      {
+          "brawlhalla_id_one": 1,
+          "brawlhalla_id_two": 2,
+          "rating": 789,
+          "peak_rating": 789,
+          "tier": "Tin 2",
+          "wins": 1,
+          "games": 1,
+          "teamname": "[BMG] Tyveris+[BMG] Dan",
+          "region": 2,
+          "global_rank": 430291
+      }
+  ]
+}
+"""
+This endpoint retrieves ranked data about a player.
 
+HTTP Request
+GET https://api.brawlhalla.com/player/{brawlhalla_id}/ranked
+
+URL Parameters
+Parameter	Description
+brawlhalla_id	The brawlhalla ID of a player
+"""
   
