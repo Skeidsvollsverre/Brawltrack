@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+
 def create_matches_tab(tab):
     # Add some content to the Matches tab
     label = tk.Label(tab, text="This is the Matches tab", font=("Arial", 16))

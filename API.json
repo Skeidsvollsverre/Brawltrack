@@ -56,14 +56,4 @@
       }
   ]
 }
-"""
-This endpoint retrieves ranked data about a player.
-
-HTTP Request
-GET https://api.brawlhalla.com/player/{brawlhalla_id}/ranked
-
-URL Parameters
-Parameter	Description
-brawlhalla_id	The brawlhalla ID of a player
-"""
   
